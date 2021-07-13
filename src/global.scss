@@ -1,0 +1,13 @@
+$mainColor:#292929; 
+// Mainpage:#0D1117
+// menu:161b22
+
+
+$width:768px;
+@mixin mobile {
+    @media(max-width: #{$width}){
+        @content
+    }
+}
+
+

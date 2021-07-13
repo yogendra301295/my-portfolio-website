@@ -1,0 +1,69 @@
+@import "../../global.scss";
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px; 
+    z-index: 4;
+    margin-bottom: 20px;
+    color: white; 
+
+    @include mobile{
+      margin-right: -120px;
+    }
+  }
+
+ 
+  .loading {
+    display: inline-block;
+    animation: rotation 2s infinite linear;
+    z-index: 4;
+    position: fixed;
+    bottom: 0;
+    left: 0; 
+    z-index: 4;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    color: white; 
+    font-size: 20px; 
+
+    @include mobile{
+      margin-left: 25px;
+    }
+    
+    
+  }
+
+  .icon{
+    font-size: 28px; 
+    margin-right: 5px;
+    margin-bottom: -2px;
+}
+// .vertical{
+//   writing-mode:tb-rl;
+//   -webkit-transform:rotate(90deg);
+//   -moz-transform:rotate(90deg);
+//   -o-transform: rotate(90deg);
+//   -ms-transform:rotate(90deg);
+//   transform: rotate(90deg);
+//   white-space:nowrap;
+//   display:block;
+//   bottom:0;
+//   width:20px;
+//   height:20px;
+// }
+.vericaltext{
+  width:1px;
+  word-wrap: break-word;
+  font-family: monospace; /* this is just for good looks */
+}
+  
+  @keyframes rotation {
+    // 50% {
+    //   transform: rotate(360deg);
+    // }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
